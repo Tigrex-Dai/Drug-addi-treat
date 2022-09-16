@@ -1,0 +1,71 @@
+---
+title: "Project tutoré 2 - Murat Simsek et Yuquan Dai"
+output:
+  pdf_document: default
+  word_document: default
+  html_document:
+    df_print: paged
+---
+
+# R pour la question 1 et Python pour la question 2
+
+```{r include=FALSE}
+if(!require(dplyr)) install.packages("dplyr",repos = "http://cran.us.r-project.org")
+if(!require(tidyverse)) install.packages("tidyverse",repos = "http://cran.us.r-project.org")
+#install.packages("dplyr")
+#install.packages("tidyverse")
+library(dplyr)
+library(tidyverse)
+```
+
+```{r}
+# Importer les données nécessaires
+dm1 <- read.csv2("dm1.csv", header = TRUE, sep = ",")
+dm2 <- read.csv2("dm2.csv", header = TRUE, sep = ",")
+ie1 <- read.csv2("ie1.csv", header = TRUE, sep = ",")
+ie2 <- read.csv2("ie2.csv", header = TRUE, sep = ",")
+lb1 <- read.csv2("lb1.csv", header = TRUE, sep = ",")
+lb2 <- read.csv2("lb2.csv", header = TRUE, sep = ",")
+
+# Jointure les données
+alldm <- full_join(dm1,dm2)
+allie <- full_join(ie1,ie2)
+alllb <- full_join(lb1,lb2)
+```
+
+```{r}
+# On a choisit dm pour travailler
+n_distinct(alldm$USUBJID)
+```
+
+```{r}
+# Faire une exclusion spéciale
+allusrdm <- alldm$USUBJID[!(alldm$USUBJID %in% allie$USUBJID[allie$IECAT=="EXCLUSION"])]
+summary(allusrdm)
+```
+
+```{r}
+# Séparer BUPRENORPHINE/NALOXONE et CLONIDINE
+allusrBN <- filter(alldm, 
+                   alldm$ARM=="BUPRENORPHINE/NALOXONE" &
+                   alldm$USUBJID %in% allusrdm)
+allusrC <- filter(alldm, 
+                  alldm$ARM=="CLONIDINE" & 
+                  alldm$USUBJID %in% allusrdm)
+n_distinct(allusrBN$USUBJID)
+n_distinct(allusrC$USUBJID)
+```
+
+```{r}
+# On considérera les patients qui ont des résultats au tests urinaires à J13 ou J14
+usrBNfin <- filter(alllb, 
+                   (alllb$VISITNUM==13 | alllb$VISITNUM==14)&
+                     (alllb$LBSTAT!="NOT DONE")&
+                     (alllb$USUBJID %in% allusrBN$USUBJID))
+usrCfin <- filter(alllb, 
+                  (alllb$VISITNUM==13 | alllb$VISITNUM==14)&
+                    (alllb$LBSTAT!="NOT DONE")&
+                    (alllb$USUBJID %in% allusrC$USUBJID))
+n_distinct(usrBNfin$USUBJID)
+n_distinct(usrCfin$USUBJID)
+```

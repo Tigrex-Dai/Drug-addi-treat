@@ -1,0 +1,11 @@
+Compléter le patients' flow chart de cette étude (renseigner les effectifs partout où c'est possible) (mettre en annexe les codes correspondants). 
+Rque: Pour l'analyse per protocole, on considérera que les patients qui ont suivi le traitement sur la totalité de la phase active et qui ont des résultats au tests urinaires à J13 ou J14 sont ceux qui n'ont pas présenté de déviation majeure au protocole.
+
+填写本研究的患者流程图（尽可能输入数字）（附上相应的代码）。
+Rque：对于每个方案的分析，我们将考虑在整个活动期接受治疗并且在 D13 或 D14 的尿检中有结果的患者是那些在方案上没有出现任何重大偏差的患者。
+
+Réaliser une table 1 décrivant les caractéristiques des patients de l'étude par bras de traitement (ARM). Les variables GENDER,AGE, MARITAL, EDUCYRS, EMPLOYMENT, BMI, SBP, DBP, PULSE, RESP, TEMP, VAS1.sc, METHADONE.sc et MORPHINE.Sc doivent être décrites à baseline à l'aide d'indicateurs descriptifs relevants (je vous ai mis à disposition un mini cahier de variable pour que vous ayez les noms explicites des variables)(mettre en annexe les codes correspondants)
+
+创建一个表 1，按治疗组 (ARM) 描述研究中患者的特征。 变量 GENDER、AGE、MARITAL、EDUCYRS、EMPLOYMENT、BMI、SBP、DBP、PULSE、RESP、TEMP、VAS1.sc、METHADONE.sc 和 MORPHINE.Sc 必须在基线时使用相关的描述性指标进行描述（我已为您提供一个迷你变量笔记本，以便您拥有变量的显式名称（附加相应的代码）
+
+
