@@ -1,0 +1,39 @@
+Objectifs:
+
+Analyse des résultats de l’étude.
+
+Un résultat important des résultats de cette étude semble être l’évolution de la proportion de patients qui restent dans l’étude.
+
+Proposez une représentation graphique qui représente l’évolution de la proportion de patients encore dans l’étude à chacune des visites de la phase active (les 14 premiers jours) en fonction des bras de traitement (BUP/NX ou CLO). On pourra également distinguer les patients suivis en ambulatoires (out-patients) des patients hospitalisés (in-patients) pour explorer si le mode de suivi à de l’influence sur le paramètre de rétention dans le traitement.
+Rque : cette figure pourrait ressembler (mais en mieux 😀) à la figure  1 de la publication de Ling et al 2005
+
+Réaliser une table 2 décrivant les résultats du critère principal de l’étude.  
+
+On représentera et comparera les proportions de répondeurs au traitement par groupe à la fin de la période active (analyse en itt).
+
+Comme le critère de jugement principal est un critère composite, on détaillera également les proportions de « succès » correspondant aux critères (i) d’abstinence et de (ii) rétention dans le traitement.
+
+(optionnel) Pour les plus courageux - ou les plus à l'aise - et si vous avez vu ça en cours de stats, vous pourrez également utiliser un modèle (mixte ou autre) pour comparer les résultats en prenant en compte l’ensemble des visites.
+
+目标：
+
+研究结果分析。
+
+这项研究结果的一个重要结果似乎是留在研究中的患者比例的变化。
+
+根据治疗组（BUP/NX 或 CLO），提出一个图形表示，表示在活动期（前 14 天）的每次就诊时仍在研究中的患者比例的演变。我们还可以区分门诊患者（out-patients）和住院患者（in-patients），探讨随访方式是否对治疗中的保留参数有影响。
+注意：这个图可能看起来像（但更好😀）Ling 等人 2005 年发表的图 1
+
+创建一个表 2，描述研究的主要终点的结果。
+
+我们将在活动期结束时按组表示和比较治疗反应者的比例（在 itt 中分析）。
+
+由于主要终点是一个复合终点，与标准 (i) 戒断和 (ii) 保留治疗相对应的“成功”比例也将详细说明。
+
+（可选）对于最勇敢的人 - 或最舒适的人 - 如果您在统计过程中看到了这一点，您还可以使用模型（混合或其他）来比较考虑所有访问的结果。\
+
+
+
+首先确认完成实验的人→
+                              合并
+首先确认测过两个药品的人→
